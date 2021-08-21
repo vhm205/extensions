@@ -42,6 +42,7 @@ chrome.runtime.onSuspend.addListener(function () {
 // });
 
 chrome.runtime.onMessage.addListener((data, sender, sendResponse) => {
+	console.log({ data, sender })
 	const { message, ms, delay, loop } = data;
 
 	switch (message) {

@@ -86,7 +86,7 @@ btnStop.addEventListener('click', function () {
 	chrome.runtime.sendMessage({ message: 'stop' });
 	fireNotify({
 		id: 'notify-rest-time',
-		title: 'Hey!! Timer is stoped',
+		title: 'Hey!! Timer is stoped ✅',
 		message: 'Relax',
 	});
 });
